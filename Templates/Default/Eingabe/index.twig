@@ -1,0 +1,19 @@
+{% extends '/_layouts/pageWithSidebar.twig' %}
+{% block content %}
+    <h1>Datenerfassung</h1>
+
+    <h3>Eingabe</h3>
+    <form action="/Eingabe" method="post">
+        <p>Straße:</p>
+        <input type="text" placeholder="Strasse" name="str"  />
+
+        <p>Hausnummer:</p>
+        <input type="text" placeholder="10a" name="num"/>
+
+        <p>Postleitzahl:</p>
+        <input type="text" placeholder="D-12345" name="plz"/>
+        <input type="submit"/>
+    </form>
+    <p></p>
+    {% include '/_Parts/zurück.twig' %}
+{% endblock %}

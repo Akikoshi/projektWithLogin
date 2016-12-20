@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Die 3 Meta-Tags oben *müssen* zuerst im head stehen; jeglicher sonstiger head-Inhalt muss *nach* diesen Tags kommen -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="/favicon.ico">
+
+	<title>{{ ControllerName }}</title>
+
+	<!-- Bootstrap-CSS -->
+	<link href="/css/app.min.css" rel="stylesheet">
+	<noscript>
+		<h1 STYLE="color: red">JavaScript-deaktiviert!</h1>
+
+		<p>Um den vollen Funktionsumfang dieser Website nutzen zu können,
+			müssen Sie JavaScript in Ihrem Browser aktivieren ...</p>
+	</noscript>
+
+	<script>
+		$(function(){
+			$('.nachHier').click(function(){
+				var content = $('.vonHier').html();
+				$(this).html(content);
+			});
+		});
+
+
+	</script>
+
+	<style>
+
+		.modalDialog {
+			position: fixed;
+			font-family: Arial, Helvetica, sans-serif;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0,0,0,0.8);
+			z-index: 99999;
+			opacity:0;
+			-webkit-transition: opacity 400ms ease-in;
+			-moz-transition: opacity 400ms ease-in;
+			transition: opacity 400ms ease-in;
+			pointer-events: none;
+		}
+
+		.modalDialog:target {
+			opacity:1;
+			pointer-events: auto;
+		}
+
+		.modalDialog > div {
+			width: 400px;
+			position: relative;
+			margin: 10% auto;
+			padding: 5px 20px 13px 20px;
+			border-radius: 10px;
+			background: #fff;
+			background: -moz-linear-gradient(#fff, #999);
+			background: -webkit-linear-gradient(#fff, #999);
+			background: -o-linear-gradient(#fff, #999);
+		}
+
+
+
+	</style>
+
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>

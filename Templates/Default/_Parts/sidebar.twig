@@ -1,0 +1,19 @@
+{% if sidebar %}
+<div class="btn-group-vertical" role="group" aria-label="sidebar">
+	{% for menuItem in sidebar %}
+	<a href="{{ menuItem.getUrl }}" class="btn btn-default">{{ menuItem.getText }}</a>
+	{% endfor %}{#
+
+	<div class="btn-group" role="group">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Dropdown-Menü
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+			<li><a href="#">Dropdown-Link</a></li>
+			<li><a href="#">Dropdown-Link</a></li>
+		</ul>
+	</div>#}
+
+</div>
+{% endif %}

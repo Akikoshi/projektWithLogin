@@ -1,0 +1,20 @@
+{% extends '/_layouts/pageWithSidebar.twig' %}
+{% block content %}
+
+    {% for item in anzeige %}
+            <a href="#openModal" onclick="$('.vonHier{{ item.getId }}').clone().appendTo('.nachHier')">
+                <div class="vonHier{{ item.getId }}">
+                    {{ item.getStrasse }} {{ item.getHausnummer }} {{ item.getPostleitzahl }}
+                </div>
+            </a></br>
+    {% endfor %}
+
+    <div id="openModal" name="openModal" class="modalDialog" onclick="$('.nachHier').empty()" >
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <p>Ihre Gewählte Adresse</p>
+            <h3 style="color: #0000fe"><div class="nachHier"></div></h3>
+        </div>
+    </div>
+    {% include '/_Parts/zurück.twig' %}
+{% endblock %}

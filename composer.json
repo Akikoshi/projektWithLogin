@@ -1,0 +1,25 @@
+{
+    "name": "projekt/theise",
+    "description": "ein test",
+    "require": {
+        "twig/twig": "^1.28"
+    },
+    "authors": [
+        {
+            "name": "Thomas Heise",
+            "email": "email@adresse.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload":{
+        "psr-4": {
+            "Class152\\Projekt\\": "./src"
+        },
+        "psr-0":{
+            "Class152\\Projekt\\": "./src"
+        }
+    },
+    "require-dev":{
+
+    }
+}

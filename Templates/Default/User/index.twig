@@ -1,0 +1,11 @@
+{% extends '/_layouts/pageWithSidebar.twig' %}
+{% block content %}
+    <form method="post">
+        <p>Username:</p>
+        <input type="TEXT" name="name" placeholder="Username" />
+        <p>Password:</p>
+        <input type="password" name="password" placeholder="Password" />
+        <p></p>
+        <button type="submit">Senden</button>
+    </form>
+{% endblock %}

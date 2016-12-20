@@ -1,0 +1,17 @@
+<div class="container">
+	<span style="font-size:8px;" class="small muted">{% if isLoggedIn %}eingeloggt{% else %}nicht eingeloggt{% endif %}</span>
+    <ol class="breadcrumb">
+
+        {% for breadcrumbMenuItem in breadcrumbMenu %}
+            <li>
+            {% if breadcrumbMenuItem.getUrl %}
+                <a href="{{ breadcrumbMenuItem.getUrl }}">
+            {% endif %}
+            {{ breadcrumbMenuItem.getText }}
+            {% if breadcrumbMenuItem.getUrl %}
+                </a>
+            {% endif %}
+            </li>
+        {% endfor %}
+    </ol>
+</div>

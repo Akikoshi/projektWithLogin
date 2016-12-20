@@ -1,0 +1,28 @@
+{
+  "name": "vagrant",
+  "version": "0.0.1",
+  "readme": "README.md",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab152.web4train.local/heiset/projekt.git"
+  },
+  "author": "thomas Heise",
+  "license": "ISC",
+  "keywords": [
+    "bla"
+  ],
+  "dependencies":{
+    "bootstrap-sass": "^3.3.7",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "jquery": "^3.1.0"
+  }
+}
